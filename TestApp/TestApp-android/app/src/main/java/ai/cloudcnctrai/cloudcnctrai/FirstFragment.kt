@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import ai.cloudcnctrai.cloudcnctrai.databinding.FragmentFirstBinding
+import android.util.Log
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.Dispatchers.Main
@@ -41,6 +42,7 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonFirst.setOnClickListener {
+            Log.d("TODOFIXME","First Fragment to Second Fragment")
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
 
