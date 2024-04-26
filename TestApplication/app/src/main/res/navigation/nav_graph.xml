@@ -1,0 +1,30 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+app:startDestination="@id/fragmentLanding">
+
+<fragment
+    android:id="@+id/fragmentLanding"
+    android:name="com.codelabspro.testapplication.FragmentLanding"
+    android:label="fragment_landing"
+    tools:layout="@layout/fragment_landing">
+    <action
+        android:id="@+id/action_fragmentLanding_to_fragmentHome"
+        app:destination="@id/fragmentHome" />
+    <action
+        android:id="@+id/action_fragmentLanding_to_fragmentLogin"
+        app:destination="@id/fragmentLogin" />
+</fragment>
+
+<fragment
+    android:id="@+id/fragmentHome"
+    android:name="com.codelabspro.testapplication.FragmentHome"
+    android:label="fragment_home"
+    tools:layout="@layout/fragment_home" />
+
+<fragment
+    android:id="@+id/fragmentLogin"
+    android:name="com.codelabspro.testapplication.FragmentLogin"
+    android:label="fragment_login"
+    tools:layout="@layout/fragment_login" />
+</navigation>
